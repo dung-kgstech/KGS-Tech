@@ -1,18 +1,26 @@
-import './App.css'
-import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
-import vi from './i18n/locales/vi.json';  
-import ja from './i18n/locales/ja.json';  
-import './i18n/i18n';   
-import Header from './components/Header';
-import { useTranslation } from 'react-i18next'; 
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './components/Header'; 
+import Footer from './components/Footer'; 
+import Home from './pages/HomePage'; 
+import Company from './pages/Company'; 
+import Business from './pages/Bussiness'; 
+import Blog from './pages/Blog'; 
 
-export default function App() {
-  const { t } = useTranslation();
+const App = () => {
   return (
-    <div>
-      <Header home={t('home')} company={t('company')} business={t('business')} blog={t('blog')} />
-      <h1 className='font-beVietnam'>{t('welcome')}</h1> {/* Dịch văn bản từ file ngôn ngữ */}
-    </div>
-  )
-}
+    <Router>
+    <Header home="Home" company="Company" business="Business" blog="Blog" />
+      <Routes>
+        <Route path="/" element={<Home />} /> {/* Default route */}
+        <Route path="/home" element={<Home />} />
+        <Route path="/company" element={<Company />} />
+        <Route path="/business" element={<Business />} />
+        <Route path="/blog" element={<Blog />} />
+      </Routes>
+      <Footer />
+  </Router>
+  );
+};
+
+export default App;
