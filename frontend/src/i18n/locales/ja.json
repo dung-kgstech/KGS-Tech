@@ -1,7 +1,7 @@
 {
-  "home": "ホーム",
-  "company": "会社",
-  "business": "ビジネス",
-  "blog": "ブログ",
+  "Home": "ホーム",
+  "Company": "会社",
+  "Business": "ビジネス",
+  "Blog": "ブログ",
   "welcome": "私たちのウェブサイトへようこそ！"
 }

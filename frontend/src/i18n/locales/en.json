@@ -1,8 +1,8 @@
 {
-    "home": "Home",
-    "company": "Company",
-    "business": "Business",
-    "blog": "Blog",
+    "Home": "Home",
+    "Company": "Company",
+    "Business": "Business",
+    "Blog": "Blog",
     "welcome": "Welcome to our website!"
   }
   

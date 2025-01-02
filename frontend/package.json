@@ -10,6 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^6.3.0",
+    "@mui/material": "^6.3.0",
     "@reduxjs/toolkit": "^2.5.0",
     "antd": "^5.22.7",
     "autoprefixer": "^10.4.0",
@@ -20,7 +24,10 @@
     "react-helmet-async": "^2.0.5",
     "react-i18next": "^15.4.0",
     "react-router-dom": "^7.1.1",
+    "react-select": "^5.9.0",
+    "react-slick": "^0.30.3",
     "react-world-flags": "^1.6.0",
+    "slick-carousel": "^1.8.1",
     "tailwindcss": "^3.3.0"
   },
   "devDependencies": {

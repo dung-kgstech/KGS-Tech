@@ -1,3 +1,64 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* CSS cho Slider */
+.slider-container {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+  
+  /* Kiểu dáng cho mỗi bài viết trong slider */
+  .post-slide {
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  /* Hiệu ứng hover khi di chuột vào bài viết */
+  .post-slide:hover {
+    transform: translateY(-10px);  /* Nâng bài viết lên khi hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);  /* Tăng độ shadow khi hover */
+  }
+  
+  /* Kiểu dáng tiêu đề bài viết */
+  .post-slide h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Kiểu dáng nội dung bài viết */
+  .post-slide p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .slider-container {
+        width: 1280px;
+    }
+  
+    .post-slide {
+      padding: 15px;
+      gap: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .slider-container {
+      width: 100%;
+    }
+  
+    .post-slide {
+      padding: 10px;
+      gap: 20px;
+    }
+  }
+  
