@@ -43,7 +43,7 @@ const CompanySlider = () => {
         ],
     };
     return (
-        <div className="slider-container w-full max-w-screen-xl mx-auto px-4">
+        <div className="slider-container w-full max-w-screen-xl mx-auto mt-3 px-4">
             <h2 className="text-3xl text-blue-600 pb-3 text-center font-bold sm:text-4xl">Các đối tác</h2>
             <div className="border-t font-bold border-blue-600 pt-6"></div>
             <Slider {...settings}>

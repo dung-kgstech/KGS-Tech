@@ -11,8 +11,8 @@ const Company = () => {
 
             <div className="max-w-7xl mx-auto px-6">
                 <AboutMe />
-                <h2 className="text-3xl bg-gray-100 p-10 font-semibold text-center text-blue-600 mb-4">Tầm Nhìn và Sứ Mệnh</h2>
                 <div className=" p-8 mb-16">
+                    <h2 className="text-3xl bg-gray-200 py-6 text-blue-600 pb-3 text-center font-bold sm:text-4xl">Tầm nhìn và sứ mệnh</h2>
                     <p className="text-lg  text-center">Tầm nhìn của chúng tôi là trở thành một trong những công ty hàng đầu trong lĩnh vực công nghệ, cung cấp các giải pháp sáng tạo và hiệu quả cho các doanh nghiệp trên toàn thế giới. </p>
                     <p className="text-lg text-center">Sứ mệnh của chúng tôi là mang lại những giá trị gia tăng cho khách hàng thông qua các dịch vụ chất lượng và sự đổi mới liên tục.</p>
                     <p className="text-lg text-center">Để đạt được mục tiêu này, chúng tôi đã thực hiện hành động nhằm đạt được sự cân bằng và toàn diện ở ba khía cạnh là kinh doanh, công nghệ, con người.</p>
@@ -23,7 +23,7 @@ const Company = () => {
                         <img src={Bussiness} alt="Bussiness" className="w-full h-auto object-cover rounded-lg shadow-lg" />
                     </div>
                     <div>
-                        <h2 className="text-3xl font-semibold mb-4">Kinh doanh</h2>
+                        <h3 className="text-3xl font-semibold mb-4">Kinh doanh</h3>
                         <p className="text-lg">Tại công ty, chúng tôi xác định mục tiêu phát triển kinh doanh bền vững, với chiến lược tối ưu hóa quy trình, nâng cao chất lượng dịch vụ và sản phẩm, đồng thời gia tăng giá trị cho khách hàng. </p>
                         <p className="text-lg">. Chúng tôi tập trung vào việc xây dựng những mô hình kinh doanh linh hoạt, có khả năng thích ứng với thị trường thay đổi nhanh chóng, từ đó củng cố uy tín và mở rộng tầm ảnh hưởng của công ty trong ngành. </p>
                     </div>
@@ -31,7 +31,7 @@ const Company = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16 items-center">
                     <div>
-                        <h2 className="text-3xl font-semibold mb-4">Công nghệ</h2>
+                        <h3 className="text-3xl font-semibold mb-4">Công nghệ</h3>
                         <p className="text-lg">Công nghệ là yếu tố then chốt giúp chúng tôi duy trì sự đổi mới và đi đầu trong ngành. </p>
                         <p className="text-lg">Chúng tôi không ngừng nghiên cứu và áp dụng các giải pháp công nghệ tiên tiến nhất, từ đó tạo ra những sản phẩm và dịch vụ vượt trội. </p>
                         <p className="text-lg">Chúng tôi cam kết duy trì sự sáng tạo, phát triển không ngừng và mang đến những giải pháp công nghệ phù hợp với xu thế toàn cầu. </p>
@@ -53,7 +53,7 @@ const Company = () => {
                 </div>
 
                 <div>
-                    <h2 className="text-3xl font-semibold text-center text-blue-600 mb-12">Đội Ngũ Của Chúng Tôi</h2>
+                    <h3 className="text-3xl text-blue-600 py-7 text-center font-bold sm:text-4xl">Đội ngũ của chúng tôi</h3>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
                         <div className="text-center">
                             <img
@@ -88,11 +88,7 @@ const Company = () => {
                     </div>
                 </div>
 
-                <h2 className="text-3xl bg-gray-100 p-10 font-semibold text-center text-blue-600 mb-4">Đối tác</h2>
-                <div className=" p-8 mb-16">
-                <CompanySlider/>
-                </div>
-
+                <CompanySlider />
             </div>
         </section>
     );
