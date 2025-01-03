@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "title": "Microsoft",
+      "image": "/src/assets/company/Microsoft_Logo.jpg"
+      
+    },
+    {
+        "id": 2,
+        "title": "DXC Technology",
+        "image": "/src/assets/company/DXC_Logo.jpg"
+    },  
+    {
+        "id": 3,
+        "title": "NEC",
+        "image": "/src/assets/company/NEC_Logo.jpg"
+    },  
+    {
+        "id": 4,
+        "title": "Sony",
+        "image": "/src/assets/company/Sony_Logo.jpg"
+    }
+  ]
+  

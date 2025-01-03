@@ -16,7 +16,7 @@ const Header = () => {
   };
 
   return (
-    <header className="flex w-full justify-center items-center p-4 bg-primary text-black sticky top-0 z-50 shadow-md">
+    <header className="flex w-full justify-center items-center  p-4 bg-white text-black sticky top-0 z-50 shadow-md">
       {/* Mobile Menu Button */}
       <button
         className="md:hidden text-2xl"

@@ -3,7 +3,7 @@
 @tailwind utilities;
 /* CSS cho Slider */
 .slider-container {
-    width: 1280px;
+    width: auto;
     margin: 0 auto;
     padding: 40px 0;
   }
@@ -40,9 +40,9 @@
   }
   
   /* Responsive */
-  @media (max-width: 1024px) {
+  @media (max-width: 1280px) {
     .slider-container {
-        width: 1280px;
+        width: 90%;
     }
   
     .post-slide {
@@ -53,7 +53,7 @@
   
   @media (max-width: 768px) {
     .slider-container {
-      width: 100%;
+      width: 90%;
     }
   
     .post-slide {
@@ -62,3 +62,27 @@
     }
   }
   
+
+  @media (max-width: 500px) {
+    .flip-card {
+      width: 100%; /* Đảm bảo flip-card chiếm 100% chiều rộng */
+      height: auto; /* Tự động điều chỉnh chiều cao */
+    }
+  
+    .flip-card-inner {
+      transform-style: preserve-3d;
+      transform: none;
+    }
+  
+    .flip-card-front,
+    .flip-card-back {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px; /* Giảm padding để thẻ không bị tràn */
+    }
+  
+    .flip-card h2 {
+      font-size: 1rem; /* Giảm kích thước chữ khi màn hình nhỏ */
+    }
+  }
