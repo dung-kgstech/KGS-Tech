@@ -19,6 +19,16 @@
         "id": 4,
         "title": "Sony",
         "image": "/src/assets/company/Sony_Logo.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Sony",
+        "image": "/src/assets/company/Sony_Logo.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Sony",
+        "image": "/src/assets/company/Sony_Logo.jpg"
     }
   ]
   

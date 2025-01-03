@@ -15,7 +15,7 @@ const CompanySlider = () => {
 
     const settings = {
         infinite: true,         // Cho phép quay lại slide đầu sau khi hết
-        slidesToShow: 8,        // Hiển thị 3 bài trên mỗi slide mặc định
+        slidesToShow: 6,        // Hiển thị 3 bài trên mỗi slide mặc định
         slidesToScroll: 1,      // Mỗi lần cuộn sẽ di chuyển 1 bài viết
         autoplay: true,         // Kích hoạt chế độ tự động chuyển slide
         autoplaySpeed: 3000,    // Thời gian chuyển slide là 3 giây
@@ -53,7 +53,7 @@ const CompanySlider = () => {
                             <img
                                 src={post.image}
                                 alt={post.title}
-                                className="w-[150px] h-[200px] object-cover rounded-lg mb-3"  
+                                className="w-[150px] h-[100px] object-cover rounded-lg mb-3"  
                             />
                             <p className="text-center">{post.title}</p> 
                         </div>
