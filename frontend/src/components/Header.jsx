@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Flag from 'react-world-flags';
-
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const { t, i18n } = useTranslation();
@@ -29,18 +29,18 @@ const Header = () => {
       {/* Menu Desktop */}
       <div className="flex w-[1280px] justify-end">
         <nav className="hidden font-beVietnam font-semibold md:flex mr-8 gap-8">
-          <a href="/home" className="hover:text-accent">
+          <Link to="/home" className="hover:text-accent">
             {t('Home')}
-          </a>
-          <a href="/company" className="hover:text-accent">
+          </Link>
+          <Link to="/company" className="hover:text-accent">
             {t('Company')}
-          </a>
-          <a href="/business" className="hover:text-accent">
+          </Link>
+          <Link to="/business" className="hover:text-accent">
             {t('Business')}
-          </a>
-          <a href="/blog" className="hover:text-accent">
+          </Link>
+          <Link to="/blog" className="hover:text-accent">
             {t('Blog')}
-          </a>
+          </Link>
         </nav>
 
         <div className="flex items-center gap-4">
@@ -60,18 +60,18 @@ const Header = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-primary p-4 absolute top-16 right-0 w-full">
           <nav className="flex flex-col gap-4">
-            <a href="/home" className="hover:text-accent">
+            <Link to="/home" className="hover:text-accent">
               {t('Home')}
-            </a>
-            <a href="/company" className="hover:text-accent">
+            </Link>
+            <Link to="/company" className="hover:text-accent">
               {t('Company')}
-            </a>
-            <a href="/business" className="hover:text-accent">
+            </Link>
+            <Link to="/business" className="hover:text-accent">
               {t('Business')}
-            </a>
-            <a href="/blog" className="hover:text-accent">
+            </Link>
+            <Link to="/blog" className="hover:text-accent">
               {t('Blog')}
-            </a>
+            </Link>
           </nav>
         </div>
       )}

@@ -3,7 +3,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import EmailIcon from '@mui/icons-material/Email';
 import { useTranslation } from 'react-i18next';
-
+import { Link } from 'react-router-dom';
 function Footer() {
   return (
     <footer className="bg-accent text-white py-8">
@@ -40,10 +40,10 @@ function Footer() {
                 <h3 className="text-xl font-semibold mb-4">Danh mục</h3>
                 <div className="border-t border-gray-300 pt-6"></div>
                   <ul className="space-y-2">
-                    <li><a href="/home" className="hover:text-orange-400">Trang chủ</a></li>
-                    <li><a href="/company" className="hover:text-orange-400">Công ty</a></li>
-                    <li><a href="/business" className="hover:text-orange-400">Dịch vụ</a></li>
-                    <li><a href="/blog" className="hover:text-orange-400">Blog</a></li>
+                    <li><Link to="/home" className="hover:text-orange-400">Trang chủ</Link></li>
+                    <li><Link to="/company" className="hover:text-orange-400">Công ty</Link></li>
+                    <li><Link to="/business" className="hover:text-orange-400">Dịch vụ</Link></li>
+                    <li><Link to="/blog" className="hover:text-orange-400">Blog</Link></li>
                   </ul>
                 </div>
               </div>
@@ -55,10 +55,10 @@ function Footer() {
                 <h3 className="text-xl font-semibold mb-4">Về KGS-TECH</h3>
                 <div className="border-t border-gray-300 pt-6"></div>
                   <ul className="space-y-2">
-                    <li><a href="/home" className="hover:text-orange-400">Sứ mệnh</a></li>
-                    <li><a href="/company" className="hover:text-orange-400">Giá trị cốt lõi</a></li>
-                    <li><a href="/services" className="hover:text-orange-400">Các cột mốc chính</a></li>
-                    <li><a href="/contact" className="hover:text-orange-400">Thành Viên</a></li>
+                    <li><Link to="/home" className="hover:text-orange-400">Sứ mệnh</Link></li>
+                    <li><Link to="/company" className="hover:text-orange-400">Giá trị cốt lõi</Link></li>
+                    <li><Link to="/services" className="hover:text-orange-400">Các cột mốc chính</Link></li>
+                    <li><Link to="/contact" className="hover:text-orange-400">Thành Viên</Link></li>
                   </ul>
               </div>
             </div>

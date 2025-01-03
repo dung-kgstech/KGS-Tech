@@ -38,9 +38,9 @@ const Blog = () => {
               <ul className="space-y-4">
                 {posts.map((post) => (
                   <li key={post.id}>
-                    <a href={post.link} className="text-gray-700 hover:text-blue-600">
+                    <Link to={post.link} className="text-gray-700 hover:text-blue-600">
                       {post.title}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -49,13 +49,13 @@ const Blog = () => {
               <h3 className="text-2xl font-semibold text-blue-600 mb-4">Danh Mục</h3>
               <ul className="space-y-4">
                 <li>
-                  <a href="/category/web-development" className="text-gray-700 hover:text-blue-600">Web Development</a>
+                  <Link to="/category/web-development" className="text-gray-700 hover:text-blue-600">Web Development</Link>
                 </li>
                 <li>
-                  <a href="/category/mobile-apps" className="text-gray-700 hover:text-blue-600">Ứng Dụng Di Động</a>
+                  <Link to="/category/mobile-apps" className="text-gray-700 hover:text-blue-600">Ứng Dụng Di Động</Link>
                 </li>
                 <li>
-                  <a href="/category/ui-ux" className="text-gray-700 hover:text-blue-600">UI/UX Design</a>
+                  <Link to="/category/ui-ux" className="text-gray-700 hover:text-blue-600">UI/UX Design</Link>
                 </li>
               </ul>
             </div>
