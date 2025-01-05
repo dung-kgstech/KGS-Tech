@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 import blogPostsData from '../data/blog.json'; // Import file JSON chứa bài viết
 
 const Blog = () => {
+
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
@@ -10,11 +12,26 @@ const Blog = () => {
     setPosts(blogPostsData);
   }, []);
 
+  // lấy bằng cách dùng api từ laravel
+  // useEffect(() => {
+  //   // axios.get('http://127.0.0.1:8000/api/posts') //chạy được qua localhost
+  //   axios.get('http://localhost/api/posts')// chạy được cho docker
+  //     .then(response => {
+  //       setPosts(response.data);
+  //     })
+  //     .catch(error => {
+  //       console.error('Có lỗi khi gọi API:', error);
+  //     });
+  // }, []);
+
+ 
+  
   return (
     <section id="blog" className="bg-gray-50 py-20">
       <div className="max-w-7xl mx-auto px-6">
         {/* Tiêu đề trang blog */}
         <h1 className="text-4xl font-semibold text-center text-blue-600 mb-12">Blog Của Chúng Tôi</h1>
+        
 
         {/* Nội dung chính và sidebar */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">

@@ -39,7 +39,7 @@ services:
     environment:
       PMA_HOST: mysql        
       PMA_USER: root         
-      PMA_PASSWORD: secret   
+      PMA_PASSWORD: secret
     ports:
       - "8080:80"           
     networks:

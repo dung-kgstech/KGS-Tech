@@ -1,12 +1,14 @@
-import React from 'react';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import EmailIcon from '@mui/icons-material/Email';
 import Services from '../components/Services';
 import CustomerReview from '../components/CustomerReview';
-
+import React, { useEffect, useState } from 'react';
 const Bussiness = () => {
+
+
   return (
+    
     <section id="Bussiness">
       {/* Banner Image */}
       <div>
