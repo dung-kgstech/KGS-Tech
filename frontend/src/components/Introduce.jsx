@@ -18,7 +18,7 @@ const Introduce = () => {
                             Chúng tôi tin rằng, với các giải pháp công nghệ tiên tiến, doanh nghiệp của bạn sẽ vươn lên mạnh mẽ và đạt được những thành tựu vượt trội.
                         </p>
                     </div>
-                    <div className="w-full sm:w-[30%] md:w-[500px] lg:w-[60%]"><img src={Company} alt="Company" className="w-full h-auto object-cover rounded-lg shadow-lg"/>
+                    <div className="w-full sm:w-[30%] md:w-[500px] lg:w-[60%]"><img src="https://res.cloudinary.com/dmwt6xlpf/image/upload/v1736061375/Company_fb7v8z.jpg" alt="Company" className="w-full h-auto object-cover rounded-lg shadow-lg"/>
                     </div>
                 </div>
             </div>

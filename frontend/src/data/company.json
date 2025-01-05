@@ -2,33 +2,33 @@
     {
       "id": 1,
       "title": "Microsoft",
-      "image": "/src/assets/company/Microsoft_Logo.jpg"
+      "image": "https://res.cloudinary.com/dmwt6xlpf/image/upload/v1736061342/Microsoft_Logo_rknnx3.png"
       
     },
     {
         "id": 2,
         "title": "DXC Technology",
-        "image": "/src/assets/company/DXC_Logo.jpg"
+        "image": "https://res.cloudinary.com/dmwt6xlpf/image/upload/v1736061342/DXC_Logo_mafe6j.png"
     },  
     {
         "id": 3,
         "title": "NEC",
-        "image": "/src/assets/company/NEC_Logo.jpg"
+        "image": "https://res.cloudinary.com/dmwt6xlpf/image/upload/v1736061342/NEC_Logo_v0pwi4.png"
     },  
     {
         "id": 4,
         "title": "Sony",
-        "image": "/src/assets/company/Sony_Logo.jpg"
+        "image": "https://res.cloudinary.com/dmwt6xlpf/image/upload/v1736061342/Sony_Logo_qk1tta.png"
     },
     {
         "id": 5,
         "title": "Sony",
-        "image": "/src/assets/company/Sony_Logo.jpg"
+        "image": "https://res.cloudinary.com/dmwt6xlpf/image/upload/v1736061342/Sony_Logo_qk1tta.png"
     },
     {
         "id": 6,
         "title": "Sony",
-        "image": "/src/assets/company/Sony_Logo.jpg"
+        "image": "https://res.cloudinary.com/dmwt6xlpf/image/upload/v1736061342/Sony_Logo_qk1tta.png"
     }
   ]
   

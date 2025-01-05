@@ -1,5 +1,4 @@
 import React from 'react';
-import Work from '../assets/images/Work.jpg';
 
 const AboutMe = () => {
     return (
@@ -19,7 +18,7 @@ const AboutMe = () => {
                             </p>
                         </div>
                         <div>
-                            <img src={Work} alt="Banner" className="w-full h-auto object-cover rounded-lg shadow-lg"/>
+                            <img src="https://res.cloudinary.com/dmwt6xlpf/image/upload/v1736061374/Work_fvvgq5.jpg" alt="Banner" className="w-full h-auto object-cover rounded-lg shadow-lg"/>
                         </div>
                     </div>
                 </div>

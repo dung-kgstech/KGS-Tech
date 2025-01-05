@@ -1,8 +1,6 @@
 import React from 'react';
 import AboutMe from '../components/AboutMe';
 import Bussiness from '../assets/images/Bussiness.jpg';
-import Technology from '../assets/images/Technology.jpg';
-import Human from '../assets/images/Human.jpg';
 import CompanySlider from '../components/CompanySlider';
 
 const Company = () => {
@@ -37,13 +35,13 @@ const Company = () => {
                         <p className="text-lg">Chúng tôi cam kết duy trì sự sáng tạo, phát triển không ngừng và mang đến những giải pháp công nghệ phù hợp với xu thế toàn cầu. </p>
                     </div>
                     <div>
-                        <img src={Technology} alt="Technology" className="w-full h-auto object-cover rounded-lg shadow-lg" />
+                        <img src="https://res.cloudinary.com/dmwt6xlpf/image/upload/v1736061376/Technology_itfhcz.jpg" alt="Technology" className="w-full h-auto object-cover rounded-lg shadow-lg" />
                     </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16 items-center">
                     <div>
-                        <img src={Human} alt="Human" className="w-full h-auto object-cover rounded-lg shadow-lg" />
+                        <img src="https://res.cloudinary.com/dmwt6xlpf/image/upload/v1736061378/Human_z1oury.jpg" alt="Human" className="w-full h-auto object-cover rounded-lg shadow-lg" />
                     </div>
                     <div>
                         <h2 className="text-3xl font-semibold mb-4">Con Người</h2>
