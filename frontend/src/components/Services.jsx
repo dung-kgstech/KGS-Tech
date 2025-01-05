@@ -1,7 +1,4 @@
 import React from 'react';
-import About from '../assets/images/Aboutme.jpg';
-import Phone from '../assets/images/Phone.jpg';
-import Website from '../assets/images/Website-design.jpg';
 
 const Services = () => {
     return (

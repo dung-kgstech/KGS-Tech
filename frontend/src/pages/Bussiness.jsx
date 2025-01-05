@@ -3,7 +3,6 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import EmailIcon from '@mui/icons-material/Email';
 import Services from '../components/Services';
-import BanerServies from '../assets/images/BanerServies.jpg';
 import CustomerReview from '../components/CustomerReview';
 
 const Bussiness = () => {
@@ -11,7 +10,7 @@ const Bussiness = () => {
     <section id="Bussiness">
       {/* Banner Image */}
       <div>
-        <img src={BanerServies} alt="Baner-Servies" className="w-full h-[400px] object-cover" />
+        <img src="https://res.cloudinary.com/dmwt6xlpf/image/upload/v1736061376/BanerServies_mewami.jpg" alt="Baner-Servies" className="w-full h-[400px] object-cover" />
       </div>
 
       {/* Services Section */}

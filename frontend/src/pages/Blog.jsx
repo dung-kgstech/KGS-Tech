@@ -22,11 +22,19 @@ const Blog = () => {
           <div className="col-span-3">
             <div className="space-y-12">
               {posts.map((post) => (
-                <div key={post.id} className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
-                  <img src={post.image} alt={post.title} className="w-full h-56 object-cover rounded-lg mb-4"/>
-                  <Link to={`/blog/${post.id}`}  className="text-3xl font-semibold text-blue-600 mb-4">{post.title}</Link>
+                <Link 
+                  key={post.id} 
+                  to={`/blog/${post.id}`}  // Link đến trang chi tiết bài viết
+                  className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 cursor-pointer block"
+                >
+                  <img 
+                    src={post.image} 
+                    alt={post.title} 
+                    className="w-full h-56 object-cover rounded-lg mb-4"
+                  />
+                  <h2 className="text-3xl font-semibold text-blue-600 mb-4">{post.title}</h2>
                   <p className="text-gray-700 mb-4">{post.content}</p>
-                </div>
+                </Link>
               ))}
             </div>
           </div>

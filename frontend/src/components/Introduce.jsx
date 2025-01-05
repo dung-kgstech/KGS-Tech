@@ -1,5 +1,4 @@
 import { React, useState } from "react";
-import Company from "../assets/images/Company.jpg";
 
 const Introduce = () => {
     return (

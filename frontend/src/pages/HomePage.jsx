@@ -1,6 +1,5 @@
 import React from 'react';
 import BlogSlider from '../components/BlogSlider';
-import banner from '../assets/images/banner.jpg';
 import { Link } from 'react-router-dom';
 import Introduce from '../components/Introduce';
 import FlipCard from '../components/FlipCard';
@@ -12,7 +11,7 @@ const HomePage = () => {
             <section id="home" className="pb-5">
                 <div className="relative">
                     {/* Banner image */}
-                    <img src={banner} alt="Banner" className="w-full h-[400px] sm:h-[500px] md:h-[700px] object-cover"/>
+                    <img src="https://res.cloudinary.com/dmwt6xlpf/image/upload/v1736061375/banner_qdeuaj.jpg" alt="Banner" className="w-full h-[400px] sm:h-[500px] md:h-[700px] object-cover"/>
                     <div className="absolute inset-0 bg-black opacity-50"></div>
                     <div className="absolute inset-0 flex items-center">
                         <div className="grid w-full max-w-screen-xl mx-auto px-4 sm:px-8">

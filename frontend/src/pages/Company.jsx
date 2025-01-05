@@ -1,6 +1,5 @@
 import React from 'react';
 import AboutMe from '../components/AboutMe';
-import Bussiness from '../assets/images/Bussiness.jpg';
 import CompanySlider from '../components/CompanySlider';
 
 const Company = () => {
@@ -18,7 +17,7 @@ const Company = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16 items-center">
                     <div>
-                        <img src={Bussiness} alt="Bussiness" className="w-full h-auto object-cover rounded-lg shadow-lg" />
+                        <img src="https://res.cloudinary.com/dmwt6xlpf/image/upload/v1736066041/Bussiness_p7m9i2.jpg" alt="Bussiness" className="w-full h-auto object-cover rounded-lg shadow-lg" />
                     </div>
                     <div>
                         <h3 className="text-3xl font-semibold mb-4">Kinh doanh</h3>
