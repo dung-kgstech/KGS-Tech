@@ -3,11 +3,10 @@ import { useParams } from 'react-router-dom'; // Để lấy tham số từ URL
 import blogPostsData from '../data/blog.json'; // Import dữ liệu JSON
 
 const Post = () => {
-  const { id } = useParams(); // Lấy id bài viết từ URL
+  const { id } = useParams();
   const [post, setPost] = useState(null);
 
   useEffect(() => {
-    // Tìm bài viết theo id
     const foundPost = blogPostsData.find((post) => post.id === parseInt(id));
     setPost(foundPost);
   }, [id]);
@@ -24,7 +23,6 @@ const Post = () => {
     <section id="post" className="bg-gray-50 py-20">
       <div className="max-w-7xl mx-auto px-6">
         <div className="bg-white p-6 rounded-lg shadow-lg">
-          {/* Ảnh bài viết */}
           <img
             src={post.image}
             alt={post.title}

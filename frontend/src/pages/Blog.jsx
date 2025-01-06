@@ -7,41 +7,36 @@ const Blog = () => {
 
   const [posts, setPosts] = useState([]);
 
-  useEffect(() => {
-    // Set posts data từ JSON vào state
-    setPosts(blogPostsData);
-  }, []);
+  // useEffect(() => {
+  //   // Set posts data từ JSON vào state
+  //   setPosts(blogPostsData);
+  // }, []);
 
   // lấy bằng cách dùng api từ laravel
-  // useEffect(() => {
-  //   // axios.get('http://127.0.0.1:8000/api/posts') //chạy được qua localhost
-  //   axios.get('http://localhost/api/posts')// chạy được cho docker
-  //     .then(response => {
-  //       setPosts(response.data);
-  //     })
-  //     .catch(error => {
-  //       console.error('Có lỗi khi gọi API:', error);
-  //     });
-  // }, []);
+  useEffect(() => {
+    axios.get('http://127.0.0.1:8000/api/posts') //chạy được qua localhost
+    // axios.get('http://localhost/api/posts')// chạy được cho docker
+      .then(response => {
+        setPosts(response.data);
+      })
+      .catch(error => {
+        console.error('Có lỗi khi gọi API:', error);
+      });
+  }, []);
 
  
   
   return (
     <section id="blog" className="bg-gray-50 py-20">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Tiêu đề trang blog */}
         <h1 className="text-4xl font-semibold text-center text-blue-600 mb-12">Blog Của Chúng Tôi</h1>
-        
-
-        {/* Nội dung chính và sidebar */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
-          {/* Danh sách bài viết */}
           <div className="col-span-3">
             <div className="space-y-12">
               {posts.map((post) => (
                 <Link 
                   key={post.id} 
-                  to={`/blog/${post.id}`}  // Link đến trang chi tiết bài viết
+                  to={`/blog/${post.id}`} 
                   className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 cursor-pointer block"
                 >
                   <img 
@@ -56,7 +51,6 @@ const Blog = () => {
             </div>
           </div>
 
-          {/* Thanh bên (Sidebar) */}
           <div className="col-span-1">
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <h3 className="text-2xl font-semibold text-blue-600 mb-4">Bài Viết Mới Nhất</h3>

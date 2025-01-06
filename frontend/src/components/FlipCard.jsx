@@ -2,11 +2,11 @@ import { React, useState } from "react";
 
 const FlipCard = () => {
     return (
-        <div className="text-2xl sm:text-4xl place-items-center text-blue-600 pb-3 text-center font-bold">
-            <h2>Những lý do tại sao bạn nên lựa chọn chúng tôi</h2>
-            <div className="border-t w-[1280px] mt-10 font-bold border-blue-600 pt-6"></div>
+        <div className=" w-full max-w-screen-xl mx-auto px-4">
+            <h2 className="text-3xl text-blue-600 pb-3 text-center font-semibold">Những lý do bạn nên chọn công ty chúng tôi</h2>
+            <div className="border-t font-bold border-blue-600 pt-6"></div>
             <div className="flex w-full items-center mt-5 justify-center">
-                <div className="grid grid-cols-1 gap-20 md:grid-cols-2 ">
+                <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 ">
                     <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
                         <div className="h-80 w-[400px]  bg-custom-gradient"> 
                         </div>

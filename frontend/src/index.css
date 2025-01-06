@@ -3,9 +3,8 @@
 @tailwind utilities;
 /* CSS cho Slider */
 .slider-container {
-    width: auto;
+    width: 90%;
     margin: 0 auto;
-    padding: 40px 0;
   }
   
   /* Kiểu dáng cho mỗi bài viết trong slider */

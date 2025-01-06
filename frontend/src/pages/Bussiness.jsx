@@ -10,25 +10,20 @@ const Bussiness = () => {
   return (
     
     <section id="Bussiness">
-      {/* Banner Image */}
       <div>
         <img src="https://res.cloudinary.com/dmwt6xlpf/image/upload/v1736061376/BanerServies_mewami.jpg" alt="Baner-Servies" className="w-full h-[400px] object-cover" />
       </div>
 
-      {/* Services Section */}
       <div className="mx-auto text-center py-8">
         <Services />
       </div>
 
-      {/* Customer Reviews Section */}
       <div className="mx-auto text-center py-8">
         <CustomerReview />
       </div>
 
-      {/* Contact Info and Form Section */}
       <div className="max-w-screen-lg mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8">
-          {/* Contact Info Section */}
           <div className="bg-gray-900 text-white p-6 rounded-lg md:col-span-4">
             <h3 className="text-2xl font-semibold mb-4">Thông tin liên hệ</h3>
             <div className="border-t border-gray-300 pt-6">
@@ -52,8 +47,7 @@ const Bussiness = () => {
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-first-name">Tên</label>
-                <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane" />
-                <p className="text-red-500 text-xs italic">Vui lòng nhập vào.</p>
+                <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane" />
               </div>
               <div className="w-full md:w-1/2 px-3">
                 <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-last-name">Họ</label>

@@ -38,29 +38,31 @@ const PostSlider = () => {
   };
 
   return (
-    <div className="slider-container w-full max-w-screen-xl mx-auto px-4">
-      <h2 className="text-3xl text-blue-600 pb-3 text-center font-semibold">Các bài viết của công ty</h2>
-      <div className="border-t font-bold border-blue-600 pt-6"></div>
-      <Slider {...settings}>
-        {posts.map((post) => (
-          <div key={post.id} className="flex justify-center">
-            <div className="bg-white rounded-lg shadow-lg hover:shadow-xl p-5 mx-3 transition duration-300 h-[400px]">
-              <img
-                src={post.image}
-                alt={post.title}
-                className="w-full h-40 object-cover rounded-lg mb-4"
-              />
-              <Link to={`/blog/${post.id}`} className="text-xl font-semibold text-blue-600 mb-4">
-                {post.title}
-              </Link>
-              <p className="text-gray-700 mb-4 line-clamp-3">
-                {post.content}
-              </p>
+    <section id="BlogSlider" className="p-5  bg-gray-50">
+      <div className="slider-container w-full max-w-screen-xl  mx-auto px-4">
+        <h2 className="text-3xl text-blue-600 pb-3 text-center font-semibold">Các bài viết của công ty</h2>
+        <div className="border-t font-bold border-blue-600 pt-6"></div>
+        <Slider {...settings}>
+          {posts.map((post) => (
+            <div key={post.id} className="flex justify-center">
+              <div className="bg-white rounded-lg shadow-lg hover:shadow-xl p-5 mx-3 transition duration-300 h-[400px]">
+                <img
+                  src={post.image}
+                  alt={post.title}
+                  className="w-full h-40 object-cover rounded-lg mb-4"
+                />
+                <Link to={`/blog/${post.id}`} className="text-xl font-semibold text-blue-600 mb-4">
+                  {post.title}
+                </Link>
+                <p className="text-gray-700 mb-4 line-clamp-3">
+                  {post.content}
+                </p>
+              </div>
             </div>
-          </div>
-        ))}
-      </Slider>
-    </div>
+          ))}
+        </Slider>
+      </div>
+    </section>
   );
 };
 

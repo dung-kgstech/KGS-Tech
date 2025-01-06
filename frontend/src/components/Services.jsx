@@ -12,31 +12,31 @@ const Services = () => {
                 <div className="border-t border-black pt-6"></div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16 items-center">
-                    <div>
+                    <div className="order-1">
                         <h2 className="text-3xl font-semibold mb-4">Phát triển hệ thống ứng dụng Web</h2>
                         <p className="text-lg">Chúng tôi xây dựng các trang web và ứng dụng web đáp ứng, hiện đại, được thiết kế phù hợp với nhu cầu của bạn.</p>
                     </div>
-                    <div>
+                    <div className="order-2">                        
                         <img src="https://res.cloudinary.com/dmwt6xlpf/image/upload/v1736061375/Aboutme_i2wk1k.jpg" alt="About_Me" className="w-full h-auto object-cover rounded-lg shadow-lg"/>
                     </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16 items-center">
-                    <div>
+                    <div className="order-2 md:order-1">
                         <img src="https://res.cloudinary.com/dmwt6xlpf/image/upload/v1736061375/Phone_vbprs4.jpg" alt="Phone" className="w-full h-auto object-cover rounded-lg shadow-lg"/>
                     </div>
-                    <div>
+                    <div className="order-1 md:order-2">
                         <h2 className="text-3xl font-semibold mb-4">Phát triển ứng dụng di động</h2>
                         <p className="text-lg"> Chúng tôi giúp bạn xây dựng và phát triển các ứng dụng di động trực quan và dễ sử dụng cho IOS và Android.</p>
                     </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16 items-center">
-                    <div>
+                    <div className="order-1">
                         <h2 className="text-3xl font-semibold mb-4">Phát triển website</h2>
                         <p className="text-lg">Chúng tôi tạo ra các website thiết kế đẹp mắt, hiện đại và dễ sử dụng, giúp nâng cao trải nghiệm người dùng.</p>
                     </div>
-                    <div>
+                    <div className="order-2">
                         <img src="https://res.cloudinary.com/dmwt6xlpf/image/upload/v1736061373/Website-design_pncjjx.jpg" alt="Website-design" className="w-full h-auto object-cover rounded-lg shadow-lg"/>
                     </div>
                 </div>

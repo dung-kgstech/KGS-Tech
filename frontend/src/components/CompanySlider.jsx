@@ -35,7 +35,7 @@ const CompanySlider = () => {
                 },
             },
             {
-                breakpoint: 300,  // Khi màn hình có độ rộng <= 300
+                breakpoint: 450,  // Khi màn hình có độ rộng <= 300
                 settings: {
                     slidesToShow: 1,  // Hiển thị 1 bài trên màn hình có độ rộng <= 768px
                 },

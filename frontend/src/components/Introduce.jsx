@@ -5,8 +5,8 @@ const Introduce = () => {
         <div className="w-full flex items-center mt-16 justify-center flex-col px-4 sm:px-8">
             <div className="w-full lg:w-[1280px]">
                 <div className="grid grid-cols-1 place-items-center lg:grid-cols-2 gap-12 mb-16 items-center">
-                    <div className="w-full md:w-[500px] lg:w-full">
-                        <div className="text-2xl sm:text-4xl text-blue-600 pb-3 text-center font-bold">
+                    <div className="w-2/3 md:w-[500px]  lg:w-full">
+                        <div className="text-2xl sm:text-4xl  text-blue-600 pb-3 text-center font-bold">
                             KGS-TECH
                         </div>
                         <p className="text-base sm:text-lg text-center sm:text-left">
@@ -17,7 +17,8 @@ const Introduce = () => {
                             Chúng tôi tin rằng, với các giải pháp công nghệ tiên tiến, doanh nghiệp của bạn sẽ vươn lên mạnh mẽ và đạt được những thành tựu vượt trội.
                         </p>
                     </div>
-                    <div className="w-full sm:w-[30%] md:w-[500px] lg:w-[60%]"><img src="https://res.cloudinary.com/dmwt6xlpf/image/upload/v1736061375/Company_fb7v8z.jpg" alt="Company" className="w-full h-auto object-cover rounded-lg shadow-lg"/>
+                    <div className="w-1/3 sm:w-[30%] md:w-[500px] lg:1/3">
+                        <img src="https://res.cloudinary.com/dmwt6xlpf/image/upload/v1736061375/Company_fb7v8z.jpg" alt="Company" className="w-[100%] place-self-end h-auto object-cover rounded-lg shadow-lg"/>
                     </div>
                 </div>
             </div>

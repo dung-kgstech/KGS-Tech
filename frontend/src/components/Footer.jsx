@@ -24,12 +24,14 @@ function Footer() {
                 </div>
                 <div className="flex  mt-2">
                   <LocalPhoneIcon />
-                  <p className="text-sm ml-2">Số Điện Thoại: 039 *** ****</p>
+                  <p className="text-sm ml-2">Số Điện Thoại:</p>
+                  <a href="tel:039*****" className="text-sm hover:text-orange-400 ml-2">039 *** ****</a>
                 </div>
                 <div className="flex mt-2">
                   <EmailIcon />
-                  <p className="text-sm ml-2">Email: KSG_tech@mail.com</p>
-                </div>
+                  <p className="text-sm ml-2">Email:</p>
+                  <a href="mailto:KSG_tech@mail.com" className="text-sm hover:text-orange-400 ml-2">KSG_tech@mail.com</a>
+                  </div>
               </div>
             </div>
           </div>
