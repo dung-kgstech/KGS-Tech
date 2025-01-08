@@ -17,8 +17,7 @@ const App = () => {
     <Router>
       <Header home={t('Home')} company={t('Company')} business={t('Business')} blog={t('Blog')} />
         <Routes>
-          <Route path="/" element={<Home />} /> {/* Default route */}
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/company" element={<Company />} />
           <Route path="/business" element={<Business />} />
           <Route path="/blog" element={<Blog />} />

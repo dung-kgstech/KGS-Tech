@@ -29,7 +29,7 @@ const Header = () => {
       {/* Menu Desktop */}
       <div className="flex w-[1280px] justify-end">
         <nav className="hidden font-beVietnam font-semibold md:flex mr-8 gap-8">
-          <Link to="/home" className="hover:text-accent">
+          <Link to="/" className="hover:text-accent">
             {t('Home')}
           </Link>
           <Link to="/company" className="hover:text-accent">
@@ -45,9 +45,9 @@ const Header = () => {
 
         <div className="flex items-center gap-4">
           <select
-            value={language} // Controlled component
-            onChange={handleLanguageChange} // Khi người dùng thay đổi ngôn ngữ
-            className=" px-2"
+            value={language} 
+            onChange={handleLanguageChange} 
+            className="px-2"
           >
             <option value="vi"><Flag code="VN" className="inline-block mr-2" />VN</option>
             <option value="en"><Flag code="US" className="inline-block mr-2" />EN</option>
@@ -58,7 +58,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-primary p-4 absolute top-16 right-0 w-full">
+        <div className="md:hidden bg-white p-4 absolute top-16 right-0 w-full">
           <nav className="flex flex-col gap-4">
             <Link to="/home" className="hover:text-accent">
               {t('Home')}

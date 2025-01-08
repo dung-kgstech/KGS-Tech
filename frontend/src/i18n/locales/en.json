@@ -1,8 +1,18 @@
 {
-    "Home": "Home",
-    "Company": "Company",
-    "Business": "Business",
-    "Blog": "Blog",
-    "welcome": "Welcome to our website!"
+  "Home": "Home",
+  "Company": "Company",
+  "Business": "Business",
+  "Blog": "Blog",
+  "welcome": "Welcome to our website!",
+  "footer": {
+    "company": "Company",
+    "about_us": "About Us",
+    "careers": "Career Opportunities",
+    "privacy_policy": "Privacy Policy",
+    "contact_info": "Contact Information",
+    "address": "40 Street 16, An Phu Ward, Thu Duc City, Ho Chi Minh City, Vietnam",
+    "phone": "039*****",
+    "email": "Kgstech0157@gmail.com",
+    "follow_us": "Follow Us"
   }
-  
+}

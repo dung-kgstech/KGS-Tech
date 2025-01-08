@@ -5,7 +5,7 @@ const AboutMe = () => {
         <div className=" pb-5">
             <div className="w-full">
                 <div className="mt-5 justify-items-center p-4">
-                <h2 className="text-3xl text-blue-600 pb-3 text-center font-bold sm:text-4xl">Về Chúng Tôi</h2>
+                <h2 className="text-3xl text-primary pb-3 text-center font-bold sm:text-4xl">Về Chúng Tôi</h2>
                 <div className="border-t border-black pt-6"></div>
                     <div className="grid grid-cols-1 items-center w-full md:grid-cols-2 gap-12 mb-16">
                         <div>

@@ -12,11 +12,11 @@ export default {
         'notoSansJP': ['Noto Sans JP', 'sans-serif'],
       },
       backgroundImage: {
-        'custom-gradient': 'linear-gradient(-45deg, #00B1FF, #05E8C2)',
+        'bgcolor': '#F3F4F6',
       },
       colors: {
-        primary: '#FFF',     
-        secondary: '#CE5A67',   
+        primary: '#6BBF59',     
+        secondary: '#303b36',   
         third: 'linear-gradient(-45deg, #00B1FF, #05E8C2)',
         accent: '#0b67ff',  
       },

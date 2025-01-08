@@ -7,25 +7,26 @@ const Blog = () => {
 
   const [posts, setPosts] = useState([]);
 
-  // useEffect(() => {
-  //   // Set posts data từ JSON vào state
-  //   setPosts(blogPostsData);
-  // }, []);
-
-  // lấy bằng cách dùng api từ laravel
   useEffect(() => {
-    axios.get('http://127.0.0.1:8000/api/posts') //chạy được qua localhost
-    // axios.get('http://localhost/api/posts')// chạy được cho docker
-      .then(response => {
-        setPosts(response.data);
-      })
-      .catch(error => {
-        console.error('Có lỗi khi gọi API:', error);
-      });
+    window.scrollTo(0, 0);
+    // Set posts data từ JSON vào state
+    setPosts(blogPostsData);
   }, []);
 
- 
-  
+  // lấy bằng cách dùng api từ laravel
+  // useEffect(() => {
+  //   axios.get('http://127.0.0.1:8000/api/posts') //chạy được qua localhost
+  //     // axios.get('http://localhost/api/posts')// chạy được cho docker
+  //     .then(response => {
+  //       setPosts(response.data);
+  //     })
+  //     .catch(error => {
+  //       console.error('Có lỗi khi gọi API:', error);
+  //     });
+  // }, []);
+
+
+
   return (
     <section id="blog" className="bg-gray-50 py-20">
       <div className="max-w-7xl mx-auto px-6">
@@ -34,14 +35,14 @@ const Blog = () => {
           <div className="col-span-3">
             <div className="space-y-12">
               {posts.map((post) => (
-                <Link 
-                  key={post.id} 
-                  to={`/blog/${post.id}`} 
+                <Link
+                  key={post.id}
+                  to={`/blog/${post.id}`}
                   className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 cursor-pointer block"
                 >
-                  <img 
-                    src={post.image} 
-                    alt={post.title} 
+                  <img
+                    src={post.image}
+                    alt={post.title}
                     className="w-full h-56 object-cover rounded-lg mb-4"
                   />
                   <h2 className="text-3xl font-semibold text-blue-600 mb-4">{post.title}</h2>
