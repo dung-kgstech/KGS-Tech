@@ -1,10 +1,13 @@
 import { React, useState } from "react";
 import { motion, useInView } from 'framer-motion';
+import { useTranslation } from "react-i18next";
 
 const FlipCard = () => {
+    const { t } = useTranslation();
+
     return (
         <section className=" w-full bg-white my-10 max-w-screen-xl mx-auto px-4">
-            <h2 className="text-3xl text-primary pb-3 text-center font-bold">Những lý do bạn nên chọn công ty chúng tôi</h2>
+            <h2 className="text-3xl text-primary pb-3 text-center font-bold"> {t("homepage.tittle.why")}</h2>
             <div className="flex w-full items-center mt-5 justify-center">
                 <motion.div
                     className="grid grid-cols-1 gap-20 md:grid-cols-2 lg:grid-cols-2"
@@ -13,7 +16,7 @@ const FlipCard = () => {
                     viewport={{ once: true }} // 
                     transition={{ duration: 2 }}
                 >
-                    <motion.div className="group relative rounded-md sm:w-[300px] md:w-[400px] h-[400px] lg:h-[300px] w-[250px] lg:w-[450px]    items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30"
+                    <motion.div className="group relative rounded-md sm:w-[300px] md:w-[400px] h-[400px] lg:h-[300px] w-[250px] lg:w-[450px] items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30"
                         initial={{ y: 100, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 1 }}
