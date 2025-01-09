@@ -6,12 +6,9 @@ import ContactForm from '../components/ContactForm';
 const Bussiness = () => {
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-
+        window.scrollTo(0, 0);
+    }, []);
   return (
-
     <section id="Bussiness">
       <div>
         <img src="https://res.cloudinary.com/dmwt6xlpf/image/upload/v1736061376/BanerServies_mewami.jpg" alt="Baner-Servies" className="w-full h-[400px] object-cover" />
@@ -21,13 +18,13 @@ const Bussiness = () => {
         <Services />
       </div>
 
-      <div className="mx-auto text-center py-8">
+      <div className="mx-auto bg-gray-100 text-center py-8">
         <CustomerReview />
       </div>
 
-      <div className="px-4 mx-auto py-8"
+      <div className="mx-auto" id="contact-form"
         style={{
-          backgroundImage: "url('https://res.cloudinary.com/dmwt6xlpf/image/upload/v1736328361/background_contact_sngg2g.jpg')",
+          backgroundImage: "url('https://res.cloudinary.com/dmwt6xlpf/image/upload/v1736398321/technology-contact-background_gnoga0.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}>

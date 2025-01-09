@@ -15,8 +15,8 @@ export default {
         'bgcolor': '#F3F4F6',
       },
       colors: {
-        primary: '#6BBF59',     
-        secondary: '#303b36',   
+        primary: '#0313fc',     
+        secondary: '#001137',   
         third: 'linear-gradient(-45deg, #00B1FF, #05E8C2)',
         accent: '#0b67ff',  
       },

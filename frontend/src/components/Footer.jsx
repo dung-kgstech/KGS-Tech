@@ -57,7 +57,7 @@ function Footer() {
                 <h3 className="text-xl font-semibold mb-4">Về KGS-TECH</h3>
                 <div className="border-t border-gray-300 pt-6"></div>
                 <ul className="space-y-2">
-                  <li><Link to="/home" className="hover:text-orange-400">Sứ mệnh</Link></li>
+                  <li><Link to="/" className="hover:text-orange-400">Sứ mệnh</Link></li>
                   <li><Link to="/company" className="hover:text-orange-400">Giá trị cốt lõi</Link></li>
                   <li><Link to="/services" className="hover:text-orange-400">Các cột mốc chính</Link></li>
                   <li><Link to="/contact" className="hover:text-orange-400">Thành Viên</Link></li>

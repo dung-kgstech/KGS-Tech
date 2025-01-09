@@ -7,8 +7,8 @@ import EmailIcon from '@mui/icons-material/Email';
 
 const ContactForm = () => {
     return (
-        <div className="flex flex-col md:flex-row items-center justify-center gap-8">
-            <div className="w-1/3 text-white p-6 rounded-lg md:col-span-4">
+        <div  className="flex flex-col md:flex-row items-center justify-center gap-8">
+            <div className="w-2/3 text-white p-6 rounded-lg md:w-[600px]">
                 <h3 className="text-2xl font-semibold mb-4">Thông tin liên hệ</h3>
                 <div className="border-t border-gray-300 pt-6">
                     <p className="text-xl">CÔNG TY TNHH KGS TECH</p>

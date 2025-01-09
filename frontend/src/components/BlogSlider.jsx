@@ -39,27 +39,25 @@ const PostSlider = () => {
 
   return (
     <section id="BlogSlider" className="p-5 mt-5 bg-gray-100">
-      <div className="slider-container w-full max-w-screen-xl  mx-auto px-4">
-        <h2 className="text-3xl text-primary pb-3 text-center font-bold">Tin tức</h2>
-        <Slider {...settings}>
+      <h2 className="text-3xl text-primary pb-3 text-center font-bold">Tin tức</h2>
+      <div className=" w-full max-w-screen-xl place-items-center flex flex-col justify-between lg:flex-row mx-auto px-4">
           {posts.map((post) => (
-            <div key={post.id} className="flex justify-center">
-              <div className="bg-white rounded-lg shadow-lg hover:shadow-xl p-5 mx-3 transition duration-300 h-[310px]">
+            <div key={post.id} className="p-3 sm:w-[400px] md:w-[600px] w-[300px]">
+              <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300 h-[310px]">
                 <img
                   src={post.image}
                   alt={post.title}
                   className="w-full h-40 object-cover rounded-lg mb-4"
                 />
-                <Link to={`/blog/${post.id}`} className="text-xl font-semibold text-blue-600 mb-4">
+                <Link to={`/blog/${post.id}`} className="text-xl p-5 mx-3  font-semibold text-blue-600 mb-4">
                   {post.title}
                 </Link>
-                <p className="text-gray-700 mb-5 line-clamp-3">
+                <p className="text-gray-700  mx-3 h-max mb-5 line-clamp-3">
                   {post.content}
                 </p>
               </div>
             </div>
           ))}
-        </Slider>
       </div>
     </section>
   );
