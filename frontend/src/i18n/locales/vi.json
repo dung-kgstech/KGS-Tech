@@ -3,5 +3,11 @@
   "Company": "Công ty",
   "Business": "Dịch vụ",
   "Blog": "Blog",
-  "welcome": "Chào mừng bạn đến với trang web của chúng tôi!"
+  "welcome": "Chào mừng bạn đến với trang web của chúng tôi!",
+  "homepage": {
+    "tittle":{
+      "why": "Tại sao lại bạn nên chọn KGS-TECH"
+    }
+
+  }
 }

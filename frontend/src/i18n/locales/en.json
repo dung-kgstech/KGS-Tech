@@ -4,6 +4,21 @@
   "Business": "Business",
   "Blog": "Blog",
   "welcome": "Welcome to our website!",
+  "homepage": {
+    "tittle":{
+      "why": "Why Choose KGS Tech?"
+    },
+    "users": "Users",
+    "happyUsers": "Happy Users",
+    "awards": "Awards",
+    "countries": "Countries Served",
+    "genuineService": "Genuine Services",
+    "ratings": "Ratings",
+    "customerSupport": "Customer Support",
+    "revenue": "Revenue",
+    "technology": "Technologies Used",
+    "certifications": "Certifications"
+  },
   "footer": {
     "company": "Company",
     "about_us": "About Us",

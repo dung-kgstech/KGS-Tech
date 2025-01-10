@@ -13,7 +13,7 @@ const FlipCard = () => {
                     viewport={{ once: true }} // 
                     transition={{ duration: 2 }}
                 >
-                    <motion.div className="group relative rounded-md sm:w-[300px] md:w-[350px] h-[400px] lg:h-[300px] w-[250px] lg:w-[450px]    items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30"
+                    <motion.div className="group relative rounded-md sm:w-[300px] md:w-[400px] h-[400px] lg:h-[300px] w-[250px] lg:w-[450px]    items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30"
                         initial={{ y: 100, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 1 }}
@@ -30,7 +30,7 @@ const FlipCard = () => {
                         </div>
                     </motion.div>
 
-                    <motion.div className="group relative rounded-md sm:w-[300px] md:w-[350px] h-[400px] lg:h-[300px] w-[250px] lg:w-[450px]   items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30"
+                    <motion.div className="group relative rounded-md sm:w-[300px] md:w-[400px] h-[400px] lg:h-[300px] w-[250px] lg:w-[450px]   items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30"
                         initial={{ y: 100, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 1 }}
@@ -48,7 +48,7 @@ const FlipCard = () => {
                         </div>
                     </motion.div>
 
-                    <motion.div className="group relative rounded-md sm:w-[300px] md:w-[350px] h-[400px] lg:h-[300px] w-[250px] lg:w-[450px]  items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30"
+                    <motion.div className="group relative rounded-md sm:w-[300px] md:w-[400px] h-[400px] lg:h-[300px] w-[250px] lg:w-[450px]  items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30"
                         initial={{ y: 100, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 1 }}
@@ -66,7 +66,7 @@ const FlipCard = () => {
                         </div>
                     </motion.div>
 
-                    <motion.div className="group relative rounded-md sm:w-[300px] md:w-[350px] h-[400px] lg:h-[300px] w-[250px] lg:w-[450px]    items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30"
+                    <motion.div className="group relative rounded-md sm:w-[300px] md:w-[400px] h-[400px] lg:h-[300px] w-[250px] lg:w-[450px]    items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30"
                         initial={{ y: 100, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 1 }}

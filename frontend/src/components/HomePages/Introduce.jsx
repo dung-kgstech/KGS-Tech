@@ -1,7 +1,10 @@
 import { React, useState } from "react";
 import { motion, useInView } from 'framer-motion';
+import { useTranslation } from "react-i18next";
 
 const Introduce = () => {
+    const { t } = useTranslation();
+
     return (
         <section className="w-full bg-gray-100 flex items-center pt-10 justify-center flex-col px-4 sm:px-8">
             <div className="w-full">

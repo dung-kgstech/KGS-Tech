@@ -1,14 +1,15 @@
 import { React, useEffect } from 'react';
-import BlogSlider from '../components/BlogSlider';
+import BlogSlider from '../components/HomePages/BlogSlider';
 import { Link } from 'react-router-dom';
-import Introduce from '../components/Introduce';
-import FlipCard from '../components/FlipCard';
-import Helmet from 'react-helmet';
-import CompanySlider from '../components/CompanySlider';
-import { motion } from 'framer-motion';
 import Achievement from '../components/HomePages/Achievement';
+import FlipCard from '../components/HomePages/FlipCard';
+import Helmet from 'react-helmet';
+import CompanySlider from '../components/layout/CompanySlider';
+import { motion } from 'framer-motion';
+import Introduce from '../components/HomePages/Introduce';
 
 const HomePage = () => {
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
