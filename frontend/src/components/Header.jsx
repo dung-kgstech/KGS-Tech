@@ -60,7 +60,7 @@ const Header = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-white p-4 absolute top-16 right-0 w-full">
           <nav className="flex flex-col gap-4">
-            <Link to="/home" className="hover:text-accent">
+            <Link to="/" className="hover:text-accent">
               {t('Home')}
             </Link>
             <Link to="/company" className="hover:text-accent">

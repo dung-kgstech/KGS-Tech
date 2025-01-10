@@ -27,12 +27,12 @@ const HomePage = () => {
                     <meta name="twitter:description" content="Khám phá KGS-Tech, công ty cung cấp các giải pháp công nghệ hàng đầu như phát triển ứng dụng Web, ứng dụng di động và thiết kế website." />
                 </Helmet>
                 <div className="relative">
-                    <img src="https://res.cloudinary.com/dmwt6xlpf/image/upload/v1736061375/banner_qdeuaj.jpg" alt="Banner" className="w-full h-[500px] sm:h-[500px] md:h-[700px] object-cover" />
+                    <img src="https://res.cloudinary.com/dmwt6xlpf/image/upload/v1736061375/banner_qdeuaj.jpg" alt="Banner" className="w-full h-[700px] sm:h-[500px] md:h-[700px] object-cover" />
                     <div className="absolute inset-0 bg-black opacity-50"></div>
                     <div className="absolute inset-0 flex items-center">
                         <div className="grid w-full max-w-screen-xl mx-auto px-4 sm:px-8">
                             <div className="p-3 flex justify-start items-center text-left sm:text-center px-4 sm:px-8">
-                                <div className="w-full lg:w-[800px] sm:p-8 rounded-lg">
+                                <div className="w-full lg:w-[800px] md:w-[800px] sm:p-8 rounded-lg">
                                     <motion.div
                                         className="w-full  flex  pt-10 flex-col"
                                         initial={{ y: -100, opacity: 0 }}

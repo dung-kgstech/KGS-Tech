@@ -5,7 +5,7 @@ import { React, useState } from "react";
 const Achievement = () => {
     return (
         <div className="flex justify-center h-full items-center ">
-            <div className=" grid place-items-center gap-10 md:grid-cols-6  max-w-7xl">
+            <div className=" grid place-items-center gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 max-w-7xl">
                 <div className="flex items-center justify-center gap-2 lg:w-[200px] flex-col">
                     <p className="text-4xl font-bold font-beVietnam text-blue-500">30+</p>
                     <p className="font-semibold text-md text-center font-beVietnam">Công ty hợp tác</p>

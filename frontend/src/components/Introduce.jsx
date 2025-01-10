@@ -4,7 +4,7 @@ import { motion, useInView } from 'framer-motion';
 const Introduce = () => {
     return (
         <section className="w-full bg-gray-100 flex items-center pt-10 justify-center flex-col px-4 sm:px-8">
-            <div className="w-full lg:w-[1280px]">
+            <div className="w-full">
                 <motion.div
                     className="flex flex-col place-items-center md:flex-row gap-12 mb-16 items-center"
                     initial={{ opacity: 0 }}
@@ -12,7 +12,6 @@ const Introduce = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 2 }}
                 >
-                    {/* Text Section */}
                     <motion.div className="md:w-[500px] flex-1 lg:w-[600px] sm:w-full"
                         initial={{ x: -200, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
@@ -31,7 +30,6 @@ const Introduce = () => {
                         </p>
                     </motion.div>
 
-                    {/* Image Section */}
                     <motion.div className="w-fit p-6 sm:mt-8 md:mt-0"
                         initial={{ x: 200, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
@@ -41,7 +39,7 @@ const Introduce = () => {
                         <img
                             src="https://res.cloudinary.com/dmwt6xlpf/image/upload/v1736061375/Company_fb7v8z.jpg"
                             alt="Company"
-                            className="w-[250px] md:w-[400px] lg:w-[600px] place-self-end h-auto object-cover rounded-lg shadow-lg"
+                            className="w-[250px] sm-[350px] md:w-[400px] lg:w-[600px] place-self-end h-auto object-cover rounded-lg shadow-lg"
                         />
                     </motion.div>
                 </motion.div>
