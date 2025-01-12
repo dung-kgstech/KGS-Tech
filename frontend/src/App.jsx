@@ -5,6 +5,7 @@ import Footer from './components/layout/Footer';
 import './App.css';
 import './i18n/i18n';
 import { useTranslation } from 'react-i18next';
+import ContactForm from './pages/ContactForm';
 
 // Lazy load các trang
 const Home = lazy(() => import('./pages/HomePage'));
@@ -14,12 +15,13 @@ const Blog = lazy(() => import('./pages/Blog'));
 const Post = lazy(() => import('./pages/Post'));
 
 // Loading spinner khi lazy load
-const LoadingSpinner = () => (
-  <div className="flex justify-center items-center h-screen">
-    <div className="border-t-4 border-blue-500 border-solid w-16 h-16 rounded-full animate-spin"></div>
-  </div>
-);
-
+const LoadingSpinner = () => {
+  return (
+    <div className="flex justify-center items-center h-screen">
+      <div className="border-t-4 border-blue-500 border-solid w-16 h-16 rounded-full animate-spin"></div>
+    </div>
+  );
+};
 // Component tạo độ trễ cho trang
 const PageWithDelay = ({ children, delay = 1000 }) => {
   const [show, setShow] = useState(false);
@@ -41,18 +43,16 @@ const App = () => {
   return (
     <Router>
       <Header home={t('Home')} company={t('Company')} business={t('Business')} blog={t('Blog')} />
-      
-      {/* Bọc Routes trong Suspense để hiển thị LoadingSpinner trong khi lazy load */}
       <Suspense fallback={<LoadingSpinner />}>
         <Routes>
           <Route path="/" element={<PageWithDelay delay={1500}><Home /></PageWithDelay>} />
           <Route path="/company" element={<PageWithDelay delay={1500}><Company /></PageWithDelay>} />
           <Route path="/business" element={<PageWithDelay delay={1500}><Business /></PageWithDelay>} />
+          <Route path="/contact" element={<PageWithDelay delay={1500}><ContactForm /></PageWithDelay>} />
           <Route path="/blog" element={<PageWithDelay delay={1500}><Blog /></PageWithDelay>} />
           <Route path="/blog/:id" element={<PageWithDelay delay={1500}><Post /></PageWithDelay>} />
         </Routes>
       </Suspense>
-      
       <Footer />
     </Router>
   );

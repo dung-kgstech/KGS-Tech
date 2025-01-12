@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import Flag from 'react-world-flags';
 import { Link } from 'react-router-dom';
 
-const Header = () => {
+const Header = ({ home, company, business, blog }) => {
   const { t, i18n } = useTranslation();
 
   const [language, setLanguage] = useState('vi'); // Ngôn ngữ mặc định
@@ -29,16 +29,16 @@ const Header = () => {
       <div className="flex w-[1280px] justify-end">
         <nav className="hidden font-beVietnam font-semibold md:flex mr-8 gap-8">
           <Link to="/" className="hover:text-accent">
-            {t('Home')}
+            {t('home')}
           </Link>
           <Link to="/company" className="hover:text-accent">
-            {t('Company')}
+            {t('company')}
           </Link>
           <Link to="/business" className="hover:text-accent">
-            {t('Business')}
+            {t('business')}
           </Link>
           <Link to="/blog" className="hover:text-accent">
-            {t('Blog')}
+            {t('blog')}
           </Link>
         </nav>
 
