@@ -1,51 +1,93 @@
-import React from 'react';
+import React from "react";
 
 const Services = () => {
-    return (
-        <div>
-            <div className="bg-gray-100 place-items-center py-8 ">
-                <div className=" w-full  max-w-screen-lg ">
-                    <h2 className="text-4xl font-bold text-primary mb-8 text-center">Dịch vụ của chúng tôi</h2>
-                    <p className="text-center text-lg mt-4 mb-3">Công ty chúng tôi chuyên cung cấp các dịch vụ công nghệ tiên tiến, bao gồm phát triển hệ thống ứng dụng Web, ứng dụng di động, và thiết kế website.</p>
-                    <p className="text-center text-lg mb-3">Với đội ngũ kỹ sư giàu kinh nghiệm, chúng tôi cam kết mang đến các giải pháp tối ưu, giúp doanh nghiệp của bạn cải thiện hiệu suất và tối đa hóa trải nghiệm người dùng. </p>
-                    <p className="text-center text-lg mb-3">Chúng tôi luôn áp dụng công nghệ mới nhất và phương pháp phát triển linh hoạt để đảm bảo các sản phẩm của bạn không chỉ đẹp mắt mà còn hoạt động mượt mà và hiệu quả trên mọi nền tảng.</p>
-                </div>
+  return (
+    <div>
+      <div className="bg-white pb-5">
+        <div className="mt-5 w-full  max-w-screen-xl mx-auto p-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16 items-center">
+            <div className="order-1">
+              <h3 className="text-3xl font-semibold mb-4">
+                Phát triển hệ thống ứng dụng Web
+              </h3>
+              <p className="text-lg">
+                Chúng tôi cung cấp dịch vụ phát triển hệ thống ứng dụng web hiện
+                đại, linh hoạt và mạnh mẽ, được thiết kế để phù hợp với các nhu
+                cầu kinh doanh đặc thù của bạn.
+                <br></br>Từ các ứng dụng quản lý doanh nghiệp đến các hệ thống
+                thương mại điện tử, đội ngũ của chúng tôi sử dụng những công
+                nghệ tiên tiến như React, Laravel để mang lại hiệu suất và bảo
+                mật cao.
+                <br></br>Mục tiêu của chúng tôi là tạo ra các hệ thống có khả
+                năng mở rộng, dễ sử dụng, và hỗ trợ sự phát triển dài hạn của
+                doanh nghiệp.
+              </p>
             </div>
-            <div className="bg-white place-items-center pb-5">
-                <div className="mt-5 w-full  max-w-screen-lg mx-auto p-4">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16 items-center">
-                        <div className="order-1">
-                            <h3 className="text-3xl font-semibold mb-4">Phát triển hệ thống ứng dụng Web</h3>
-                            <p className="text-lg">Chúng tôi xây dựng các trang web và ứng dụng web đáp ứng, hiện đại, được thiết kế phù hợp với nhu cầu của bạn.</p>
-                        </div>
-                        <div className="order-2">                        
-                            <img src="https://res.cloudinary.com/dmwt6xlpf/image/upload/v1736061375/Aboutme_i2wk1k.jpg" alt="About_Me" className="w-full h-auto object-cover rounded-lg shadow-lg"/>
-                        </div>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16 items-center">
-                        <div className="order-2 md:order-1">
-                            <img src="https://res.cloudinary.com/dmwt6xlpf/image/upload/v1736061375/Phone_vbprs4.jpg" alt="Phone" className="w-full h-auto object-cover rounded-lg shadow-lg"/>
-                        </div>
-                        <div className="order-1 md:order-2">
-                            <h3 className="text-3xl font-semibold mb-4">Phát triển ứng dụng di động</h3>
-                            <p className="text-lg"> Chúng tôi giúp bạn xây dựng và phát triển các ứng dụng di động trực quan và dễ sử dụng cho IOS và Android.</p>
-                        </div>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16 items-center">
-                        <div className="order-1">
-                            <h3 className="text-3xl font-semibold mb-4">Phát triển website</h3>
-                            <p className="text-lg">Chúng tôi tạo ra các website thiết kế đẹp mắt, hiện đại và dễ sử dụng, giúp nâng cao trải nghiệm người dùng.</p>
-                        </div>
-                        <div className="order-2">
-                            <img src="https://res.cloudinary.com/dmwt6xlpf/image/upload/v1736061373/Website-design_pncjjx.jpg" alt="Website-design" className="w-full h-auto object-cover rounded-lg shadow-lg"/>
-                        </div>
-                    </div>
-                </div>
+            <div className="order-2">
+              <img
+                src="https://res.cloudinary.com/dmwt6xlpf/image/upload/v1736061375/Aboutme_i2wk1k.jpg"
+                alt="About_Me"
+                className="w-full h-auto object-cover rounded-lg shadow-lg"
+              />
             </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16 items-center">
+            <div className="order-2 md:order-1">
+              <img
+                src="https://res.cloudinary.com/dmwt6xlpf/image/upload/v1736061375/Phone_vbprs4.jpg"
+                alt="Phone"
+                className="w-full h-auto object-cover rounded-lg shadow-lg"
+              />
+            </div>
+            <div className="order-1 md:order-2">
+              <h3 className="text-3xl font-semibold mb-4">
+                Phát triển ứng dụng di động
+              </h3>
+              <p className="text-lg">
+                Với đội ngũ chuyên gia trong lĩnh vực phát triển di động, chúng
+                tôi mang đến những ứng dụng thân thiện, hiệu năng cao trên cả
+                hai nền tảng iOS và Android.
+                <br></br>Sử dụng các công nghệ tiên tiến như React Native,
+                Flutter, chúng tôi giúp khách hàng tiết kiệm thời gian và chi
+                phí trong khi vẫn đảm bảo chất lượng ứng dụng.
+                <br></br>Từ ứng dụng thương mại điện tử, mạng xã hội đến ứng
+                dụng quản lý công việc, chúng tôi đảm bảo giao diện trực quan,
+                trải nghiệm mượt mà, và khả năng tích hợp dễ dàng với hệ thống
+                sẵn có.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16 items-center">
+            <div className="order-1">
+              <h3 className="text-3xl font-semibold mb-4">
+                Phát triển website
+              </h3>
+              <p className="text-lg">
+                Chúng tôi chuyên thiết kế và phát triển các website chuyên
+                nghiệp, sáng tạo và chuẩn SEO.
+                <br></br>Với khả năng tối ưu hóa trải nghiệm người dùng (UX) và
+                giao diện người dùng (UI), các website mà chúng tôi tạo ra không
+                chỉ đẹp mắt mà còn thân thiện trên mọi thiết bị.
+                <br></br>Từ website giới thiệu doanh nghiệp, trang blog cá nhân
+                đến các trang thương mại điện tử, đội ngũ của chúng tôi luôn chú
+                trọng từng chi tiết để đảm bảo tốc độ tải trang nhanh, khả năng
+                tương tác cao, và dễ dàng quản lý nội dung.
+              </p>
+            </div>
+            <div className="order-2">
+              <img
+                src="https://res.cloudinary.com/dmwt6xlpf/image/upload/v1736750392/html-css-collage-concept_yk0tfn.jpg"
+                alt="Website-design"
+                className="w-full h-auto object-cover rounded-lg shadow-lg"
+              />
+            </div>
+          </div>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default Services;

@@ -1,18 +1,18 @@
-import React, { lazy, Suspense, useEffect, useState } from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import Header from './components/layout/Header';
-import Footer from './components/layout/Footer';
-import './App.css';
-import './i18n/i18n';
-import { useTranslation } from 'react-i18next';
-import ContactForm from './pages/ContactForm';
+import React, { lazy, Suspense, useEffect, useState } from "react";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
+import "./App.css";
+import "./i18n/i18n";
+import { useTranslation } from "react-i18next";
 
 // Lazy load các trang
-const Home = lazy(() => import('./pages/HomePage'));
-const Company = lazy(() => import('./pages/Company'));
-const Business = lazy(() => import('./pages/Bussiness'));
-const Blog = lazy(() => import('./pages/Blog'));
-const Post = lazy(() => import('./pages/Post'));
+const Home = lazy(() => import("./pages/HomePage"));
+const Company = lazy(() => import("./pages/Company"));
+const Business = lazy(() => import("./pages/Bussiness"));
+const ContactForm = lazy(() => import("./pages/ContactForm"));
+const Blog = lazy(() => import("./pages/Blog"));
+const Post = lazy(() => import("./pages/Post"));
 
 // Loading spinner khi lazy load
 const LoadingSpinner = () => {
@@ -42,15 +42,62 @@ const App = () => {
 
   return (
     <Router>
-      <Header home={t('Home')} company={t('Company')} business={t('Business')} blog={t('Blog')} />
+      <Header
+        home={t("Home")}
+        company={t("Company")}
+        business={t("Business")}
+        blog={t("Blog")}
+      />
       <Suspense fallback={<LoadingSpinner />}>
         <Routes>
-          <Route path="/" element={<PageWithDelay delay={1500}><Home /></PageWithDelay>} />
-          <Route path="/company" element={<PageWithDelay delay={1500}><Company /></PageWithDelay>} />
-          <Route path="/business" element={<PageWithDelay delay={1500}><Business /></PageWithDelay>} />
-          <Route path="/contact" element={<PageWithDelay delay={1500}><ContactForm /></PageWithDelay>} />
-          <Route path="/blog" element={<PageWithDelay delay={1500}><Blog /></PageWithDelay>} />
-          <Route path="/blog/:id" element={<PageWithDelay delay={1500}><Post /></PageWithDelay>} />
+          <Route
+            path="/"
+            element={
+              <PageWithDelay delay={1500}>
+                <Home />
+              </PageWithDelay>
+            }
+          />
+          <Route
+            path="/company"
+            element={
+              <PageWithDelay delay={1500}>
+                <Company />
+              </PageWithDelay>
+            }
+          />
+          <Route
+            path="/business"
+            element={
+              <PageWithDelay delay={1500}>
+                <Business />
+              </PageWithDelay>
+            }
+          />
+          <Route
+            path="/contact"
+            element={
+              <PageWithDelay delay={1500}>
+                <ContactForm />
+              </PageWithDelay>
+            }
+          />
+          <Route
+            path="/blog"
+            element={
+              <PageWithDelay delay={1500}>
+                <Blog />
+              </PageWithDelay>
+            }
+          />
+          <Route
+            path="/blog/:id"
+            element={
+              <PageWithDelay delay={1500}>
+                <Post />
+              </PageWithDelay>
+            }
+          />
         </Routes>
       </Suspense>
       <Footer />
