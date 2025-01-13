@@ -15,7 +15,7 @@ const Introduce = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 2 }}
                 >
-                    <motion.div className="md:w-[500px] flex-1 lg:w-[600px] sm:w-full"
+                    <motion.div className="md:w-[500px] place-items-center lg:w-[600px] sm:w-full"
                         initial={{ x: -200, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
                         viewport={{ once: true }}

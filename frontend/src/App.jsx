@@ -5,6 +5,7 @@ import Footer from './components/layout/Footer';
 import './App.css';
 import './i18n/i18n';
 import { useTranslation } from 'react-i18next';
+import ContactForm from './pages/ContactForm';
 
 // Lazy load các trang
 const Home = lazy(() => import('./pages/HomePage'));
@@ -47,6 +48,7 @@ const App = () => {
           <Route path="/" element={<PageWithDelay delay={1500}><Home /></PageWithDelay>} />
           <Route path="/company" element={<PageWithDelay delay={1500}><Company /></PageWithDelay>} />
           <Route path="/business" element={<PageWithDelay delay={1500}><Business /></PageWithDelay>} />
+          <Route path="/contact" element={<PageWithDelay delay={1500}><ContactForm /></PageWithDelay>} />
           <Route path="/blog" element={<PageWithDelay delay={1500}><Blog /></PageWithDelay>} />
           <Route path="/blog/:id" element={<PageWithDelay delay={1500}><Post /></PageWithDelay>} />
         </Routes>

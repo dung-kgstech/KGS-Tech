@@ -28,7 +28,7 @@ const HomePage = () => {
                     <meta name="twitter:description" content="Khám phá KGS-Tech, công ty cung cấp các giải pháp công nghệ hàng đầu như phát triển ứng dụng Web, ứng dụng di động và thiết kế website." />
                 </Helmet>
                 <div className="relative">
-                    <img src="https://res.cloudinary.com/dmwt6xlpf/image/upload/v1736061375/banner_qdeuaj.jpg" alt="Banner" className="w-full h-[700px] sm:h-[500px] md:h-[700px] object-cover" />
+                    <img src="https://res.cloudinary.com/dmwt6xlpf/image/upload/v1736061375/banner_qdeuaj.jpg" alt="Banner" className="w-full h-[700px] sm:h-[800px] md:h-[1000px] object-cover" />
                     <div className="absolute inset-0 bg-black opacity-50"></div>
                     <div className="absolute inset-0 flex items-center">
                         <div className="grid w-full max-w-screen-xl mx-auto px-4 sm:px-8">

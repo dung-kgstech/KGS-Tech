@@ -5,6 +5,8 @@ import Memeber from '../components/Member';
 import Vision from '../components/Vision';
 import Value from '../components/Value';
 import { Helmet } from 'react-helmet';
+import TimeLine from '../components/Company/TimeLine';
+import Contact from '../components/layout/Contact';
 
 const Company = () => {
     useEffect(() => {
@@ -28,6 +30,10 @@ const Company = () => {
                     <AboutMe />
                 </div>
 
+                <div id="TimeLine" className="bg-gray-100 py-7">
+                    <TimeLine />
+                </div>
+
                 <div id="Value" className="bg-gray-100 py-7">
                     <Value />
                 </div>
@@ -38,6 +44,10 @@ const Company = () => {
 
                 <div id="Member" className="bg-gray-100 py-7">
                     <Memeber />
+                </div>
+
+                <div id="Contact" className="bg-gray-100 py-7">
+                    <Contact/>
                 </div>
 
                 <div id="CompanySlide" className="p-4 m-8">
