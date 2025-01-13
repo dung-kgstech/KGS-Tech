@@ -7,9 +7,9 @@ const Introduce = () => {
 
     return (
         <section className="w-full bg-gray-100 flex items-center pt-10 justify-center flex-col px-4 sm:px-8">
-            <div className="w-full">
+            <div className="w-full place-items-center">
                 <motion.div
-                    className="flex flex-col place-items-center md:flex-row gap-12 mb-16 items-center"
+                    className="flex flex-col  max-w-screen-lg place-items-center md:flex-row gap-12 mb-16 items-center"
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}

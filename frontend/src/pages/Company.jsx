@@ -1,6 +1,6 @@
 import { React, useEffect } from 'react';
 import AboutMe from '../components/AboutMe';
-import CompanySlider from '../components/CompanySlider';
+import CompanySlider from '../components/layout/CompanySlider';
 import Memeber from '../components/Member';
 import Vision from '../components/Vision';
 import Value from '../components/Value';
