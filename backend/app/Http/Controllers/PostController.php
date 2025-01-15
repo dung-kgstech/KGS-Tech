@@ -1,19 +1,21 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use App\Models\Post; // Import model Post
-use Illuminate\Http\Request;
+use App\Http\Resources\PostResource;
+use App\Models\Post; 
 
 class PostController extends Controller
 {
     // Phương thức index để lấy dữ liệu từ bảng posts
     public function index()
     {
-        // Lấy tất cả bài viết từ bảng posts
-        $posts = Post::all();
+        $posts = Post::all();  
+        return response()->json($posts, 200); 
+    }
 
-        // Trả về dữ liệu dưới dạng JSON
-        return response()->json($posts);
+    public function show($id)
+    {
+        $post = Post::findOrFail($id);
+        return new PostResource($post);  
     }
 }

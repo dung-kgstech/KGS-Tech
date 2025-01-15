@@ -91,7 +91,7 @@ const App = () => {
             }
           />
           <Route
-            path="/blog/:id"
+            path="/posts/:id"
             element={
               <PageWithDelay delay={1500}>
                 <Post />

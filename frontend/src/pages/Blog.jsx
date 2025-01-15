@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import blogPostsData from "../data/blog.json"; // Import file JSON chứa bài viết
-import { motion } from "framer-motion";
 
 const Blog = () => {
   const [posts, setPosts] = useState([]);
@@ -10,20 +8,21 @@ const Blog = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     // Set posts data từ JSON vào state
-    setPosts(blogPostsData);
+    setPosts(posts);
   }, []);
 
-  // lấy bằng cách dùng api từ laravel
-  // useEffect(() => {
-  //   axios.get('http://127.0.0.1:8000/api/posts') //chạy được qua localhost
-  //     // axios.get('http://localhost/api/posts')// chạy được cho docker
-  //     .then(response => {
-  //       setPosts(response.data);
-  //     })
-  //     .catch(error => {
-  //       console.error('Có lỗi khi gọi API:', error);
-  //     });
-  // }, []);
+  //lấy bằng cách dùng api từ laravel
+  useEffect(() => {
+    axios
+      .get("http://127.0.0.1:8000/api/blogs") //chạy được qua localhost
+      // axios.get('http://localhost/api/posts')// chạy được cho docker
+      .then((response) => {
+        setPosts(response.data);
+      })
+      .catch((error) => {
+        console.error("Có lỗi khi gọi API:", error);
+      });
+  }, []);
 
   return (
     <section id="blog">
@@ -37,14 +36,12 @@ const Blog = () => {
           <div className="grid items-center w-full max-w-screen-xl mx-auto">
             <div className="p-3 text-left sm:text-center px-4 sm:px-8">
               <div className="w-full flex justify-center place-items-center text-center sm:p-8 rounded-lg">
-                {/* Tiêu đề */}
                 <div className="w-full flex pt-10 flex-col">
                   <h1 className="text-4xl sm:text-4xl font-semibold mb-4 text-white">
                     The KGS-Tech Blogs
                   </h1>
                 </div>
 
-                {/* Thanh tìm kiếm */}
                 <div className="w-full mt-6">
                   <form className="w-full lg:w-[600px]">
                     <div className="relative">
@@ -78,7 +75,7 @@ const Blog = () => {
               {posts.map((post) => (
                 <Link
                   key={post.id}
-                  to={`/blog/${post.id}`}
+                  to={`/posts/${post.id}`}
                   className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 cursor-pointer block"
                 >
                   <img
