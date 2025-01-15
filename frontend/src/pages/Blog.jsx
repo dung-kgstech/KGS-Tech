@@ -1,28 +1,33 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import blogPostsData from "../data/blog.json";
 
 const Blog = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-    // Set posts data từ JSON vào state
-    setPosts(posts);
+    setPosts(blogPostsData);
   }, []);
 
-  //lấy bằng cách dùng api từ laravel
-  useEffect(() => {
-    axios
-      .get("http://127.0.0.1:8000/api/blogs") //chạy được qua localhost
-      // axios.get('http://localhost/api/posts')// chạy được cho docker
-      .then((response) => {
-        setPosts(response.data);
-      })
-      .catch((error) => {
-        console.error("Có lỗi khi gọi API:", error);
-      });
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  //   // Set posts data từ JSON vào state
+  //   setPosts(posts);
+  // }, []);
+
+  // //lấy bằng cách dùng api từ laravel
+  // useEffect(() => {
+  //   axios
+  //     .get("http://127.0.0.1:8000/api/blogs") //chạy được qua localhost
+  //     // axios.get('http://localhost/api/posts')// chạy được cho docker
+  //     .then((response) => {
+  //       setPosts(response.data);
+  //     })
+  //     .catch((error) => {
+  //       console.error("Có lỗi khi gọi API:", error);
+  //     });
+  // }, []);
 
   return (
     <section id="blog">
